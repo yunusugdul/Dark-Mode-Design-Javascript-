@@ -1,0 +1,53 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body{
+    transition: .5s ease all;
+}
+
+h2{
+    transition: .5s ease all;
+}
+
+.dark-mode-button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: gray;
+    border-radius: 25px;
+    padding: 5px;
+    position: relative;
+    width: 80px;
+}
+
+.dark-mode-button-wrapper i{
+    color: yellow;
+    font-size: 25px;
+}
+
+.circle-button{
+    background-color: black;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: .5s ease all;
+}
+
+.circle-button.active{
+    left:44px;
+    background-color: white;
+}
+
+body.active{
+    background-color: black;
+}
+
+h2.active{
+
+    color: white;
+}
